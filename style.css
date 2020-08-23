@@ -1,0 +1,416 @@
+html{
+    scroll-behavior: smooth; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.navbar{
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    background-color: #fff;
+}
+.navbar-brand{
+    font-size: 40px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar-nav{
+    width: 100%;
+    justify-content: flex-end;
+}
+.nav-item a{
+    font-weight: bold;
+    font-size: 12px;
+}
+.nav-item{
+    padding: 0 5px;
+}
+.nav-item a button{
+    border-radius: 50px;
+    font-weight: bold;
+}
+.btn-primary{
+    background-color: #8C50FF;
+    border-color: #8C50FF;
+}
+#empty{
+    width: 100%;
+    height: 50px;
+}
+.carousel-caption {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+/* .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+} */
+.carousel-caption h5{
+    font-size: 4em;
+    text-transform: uppercase;
+}
+/* .home-line{
+    height: 100vh;
+}
+.home-line .home-first-content h1{
+    font-size: 80px;
+} */
+
+.card-section {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+#card-1 img{
+    margin: 0 auto;
+    animation: card-img 1s ease-in-out infinite alternate;
+}
+@keyframes card-img {
+    from{
+        transform: translateY(-10px) rotateX(0deg);
+    }
+    to{
+        transform: translateY(10px) rotateX(20deg);
+    }
+}
+@media(max-width: 785px){
+    #empty{
+        height: 75px;
+    }
+    .carousel-caption h5{
+        font-size: 12px;
+        text-transform: uppercase;
+    } 
+}
+.card{
+    border: none;
+}
+.card-2{
+    margin: 0 auto;
+    animation: card-img 1s ease-in-out infinite alternate;
+    animation-delay: .5s;
+}
+.card-3{
+    animation: card-img 1s ease-in-out infinite alternate;
+    animation-delay: 1s;
+}
+.card-section .card-deck {
+    margin-left: 50px;
+}
+
+.card-section h5 {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card-section p {
+    font-size: 13px;
+    color: #939393;
+}
+
+.card-section img {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+@media(max-width: 785px){
+    .card-section .card-deck {
+        margin-left: 0;
+    }
+}
+
+#online-twenty{
+    margin-top: 100px;
+    height: 80vh;
+
+}
+#online-twenty .online-content{
+    margin: auto 0;
+}
+#online-twenty .online-content h1{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#online-twenty .online-class-img img{
+    border-radius: 10px;
+}
+@media(max-width: 785px){
+    #online-twenty{
+        height: auto;
+    }
+    #online-twenty .online-content h1{
+        font-size: 25px;
+    }   
+    #online-twenty .online-content p{
+        font-size: 10px;
+    }
+    #online-twenty .online-content button{
+        padding: 8px 20px;
+    }
+}
+#online-two{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./images/school-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+#online-two-class .online-two-content{
+    margin-top: 18%;
+    color: #fff;
+}
+#online-two-class .online-two-content h1{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+#online-two-class .online-two-content h2{
+    font-size: 5em;
+    font-weight: bold;
+}
+#online-two-class .online-two-content h2:after{
+    content: '';
+    position: absolute;
+    top: 51%;
+    left: 33%;
+    width: 380px;
+    height: 3px;
+    background-color: #8C50FF;
+}
+#online-two-class .online-two-content button{
+    margin-top: 20px;
+    padding: 20px 60px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 785px){
+    #online-two{
+        height: auto;
+    }
+    #online-two-class .online-two-content h2{
+        font-size: 3em;
+    }
+    #online-two-class .online-two-content h2:after{
+        top: 42%;
+        left: 15%;
+        width: 230px;
+    }
+    #online-two-class .online-two-content button{
+        padding: 8px 20px;
+        margin-bottom: 50px;
+    }
+}
+
+#staff-section{
+    background-color: #d6c1ff;
+    height: 120vh;
+}
+#staff-ex{
+    margin-bottom: 50px;
+}
+#staff-content{
+    margin-top: 50px;
+}
+#staff-content h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+.teacher-head{
+    margin-top: 50px;
+}
+.teacher-head .card h5{
+    color: #8C50FF;
+    font-weight: bold;
+}
+.teacher-head .card i, span{
+    color: #8C50FF;
+}
+.teacher-head .card span{
+    cursor: pointer;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+@media(max-width: 785px){
+    #staff-section{
+        height: auto;
+    }
+}
+
+/* .social-media i{
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px 10px;
+}
+.social-media i:first-child{
+    padding: 10px 15px;
+    color: #3D5AA8;
+}
+.social-media i:nth-child(2){
+    color: #56C4C5;
+}
+.social-media i:nth-child(3){
+    color: #e91b1b;
+}
+.social-media i:nth-child(4){
+    color: #e91ba4;
+} */
+#footer-end{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#footer-end .footer-wesite p{
+    justify-self: self-end;
+}
+
+
+
+
+
+
+
+/*----------- About ----------------*/
+
+/* #about-section{
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./about/about-images/vision.jpg);
+    background-repeat: no-repeat;
+} */
+@media (max-width: 785px){
+    #about-section img{
+        margin-top: 85px;
+    }
+}
+#about-section-content{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(./about/about-images/sea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+#about-section-content .about-scetion-mission{
+    padding: 0 50px;
+}
+#about-section-content .about-scetion-mission h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;   
+    padding: 0 50px;
+    letter-spacing: 2px;
+}
+#about-section-content .about-scetion-mission p{
+    padding: 0 50px;
+}
+@media(max-width: 785px){
+    #about-section-content .about-scetion-mission{
+        padding: 0 0;
+    }
+    #about-section-content .about-scetion-mission h1{
+        font-size: 20px;
+    }
+    #about-section-content .about-scetion-mission p{
+        font-size: 10px;
+    }
+}
+
+#history-section{
+    background-color: #efefef;
+}
+#history-content  h1{
+    font-size: 2em;
+    padding: 0 30px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8C50FF;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+#history-content  p{
+    padding: 0 30px;
+    font-size: 14.6667px;
+}
+@media(max-width: 785px){
+    #history-content  h1{
+        font-size: 15px;
+        padding: 0 0;
+    }
+    #history-content  p{
+        font-size: 10px;
+        padding: 0 0;
+    }
+}
+#expolre-section{
+    font-family: 'Nunito', sans-serif;
+}
+#explore-content h1{
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #340094;
+}
+#explore-section .card{
+    background-color: #efefef;
+    margin-top: 10px;
+    margin: 0 40px;
+}
+#explore-card-section .card-body h5{
+    color: #340094;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+#explore-card-section .card-body button{
+    margin-bottom: 50px;
+    background-color: transparent;
+    border-radius: 0;
+    color: #000;
+    border: 2px solid #8C50FF;
+    padding: 8px 25px;
+    transition: .5s;
+}
+#explore-card-section .card-body button:hover{
+    background-color: #8C50FF;
+    color: #fff;
+}
+@media(max-width: 785px){
+    #explore-section .card{
+        margin: 0 0;
+    }
+    #explore-content h1{
+        font-size: 30px;
+        font-weight: bolder;
+        padding: 0 0;
+    }
+    #explore-card-section .card-body h5{
+        font-size: 15px;
+    }
+    #explore-card-section .card-body button{
+        padding: 8px 20px;
+    }
+}
