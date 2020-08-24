@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth; 
 }
-*{
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,6 +44,9 @@ body{
     width: 100%;
     height: 50px;
 }
+.d-none {
+    display: block!important;
+}
 .carousel-caption {
     width: 100%;
     position: absolute;
@@ -56,54 +59,55 @@ body{
     color: #fff;
     text-align: center;
 }
-/* .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-} */
 .carousel-caption h5{
     font-size: 4em;
     text-transform: uppercase;
 }
-/* .home-line{
-    height: 100vh;
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
 }
-.home-line .home-first-content h1{
-    font-size: 80px;
-} */
 
-.card-section {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    
-}
-#card-1 img{
-    margin: 0 auto;
-    animation: card-img 1s ease-in-out infinite alternate;
-}
-@keyframes card-img {
-    from{
-        transform: translateY(-10px) rotateX(0deg);
-    }
-    to{
-        transform: translateY(10px) rotateX(20deg);
-    }
-}
 @media(max-width: 785px){
     #empty{
         height: 75px;
     }
+    .carousel-caption {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
     .carousel-caption h5{
-        font-size: 12px;
+        font-size: 20px;
+        padding: 0 50px;
         text-transform: uppercase;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+        padding: 0 80px;
     } 
-}
+} 
+
+
+
 .card{
     border: none;
 }
@@ -135,6 +139,23 @@ body{
     text-align: center;
     height: 100px;
     width: 100px;
+}
+.card-section {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+#card-1 img{
+    margin: 0 auto;
+    animation: card-img 1s ease-in-out infinite alternate;
+}
+@keyframes card-img {
+    from{
+        transform: translateY(-10px) rotateX(0deg);
+    }
+    to{
+        transform: translateY(10px) rotateX(20deg);
+    }
 }
 @media(max-width: 785px){
     .card-section .card-deck {
@@ -229,7 +250,7 @@ body{
 }
 
 #staff-section{
-    background-color: #d6c1ff;
+    background-color: #e2d3ff;
     height: 120vh;
 }
 #staff-ex{
@@ -262,32 +283,51 @@ body{
     #staff-section{
         height: auto;
     }
+    #staff-content h1{
+        font-size: 1.5em;
+    }
+    #staff-content p{
+        font-size: 12px;
+        padding: 0 50px;
+    }
+    .teacher-head{
+        margin-top: 0;
+    }
+    .teacher-head .card h5{
+        font-size: 15px;
+    }
+    .teacher-head .card p{
+        font-size: 12px;
+    }
+    .teacher-head .card i{
+        font-size: 12px;
+    }
 }
 
-/* .social-media i{
-    cursor: pointer;
-    font-size: 15px;
-    padding: 10px 10px;
-}
-.social-media i:first-child{
-    padding: 10px 15px;
-    color: #3D5AA8;
-}
-.social-media i:nth-child(2){
-    color: #56C4C5;
-}
-.social-media i:nth-child(3){
-    color: #e91b1b;
-}
-.social-media i:nth-child(4){
-    color: #e91ba4;
-} */
 #footer-end{
     margin-top: 50px;
     margin-bottom: 20px;
 }
 #footer-end .footer-wesite p{
     justify-self: self-end;
+}
+@media(max-width: 785px){
+    #footer-end{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    #footer-end .footer-end-content{
+        width: 50%;
+    }
+    #footer-end .footer-end-content p{
+        font-size: 5px;
+    }
+    #footer-end .footer-wesite{
+        width: 50%;
+    }
+    #footer-end .footer-wesite p{
+        font-size: 5px;
+    }
 }
 
 
@@ -298,11 +338,6 @@ body{
 
 /*----------- About ----------------*/
 
-/* #about-section{
-    height: 80vh;
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./about/about-images/vision.jpg);
-    background-repeat: no-repeat;
-} */
 @media (max-width: 785px){
     #about-section img{
         margin-top: 85px;
@@ -412,5 +447,239 @@ body{
     }
     #explore-card-section .card-body button{
         padding: 8px 20px;
+    }
+}
+
+
+
+/*---------- Academic ------------- */
+
+#academic-section{
+    height: 100vh;
+    width: 100%;
+    background-image:url(./Accadamic/Academic-images/academic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#guidance-section{
+    background-color: #fff;
+}
+#guidance-content{
+    padding: 0 30px;
+}
+#guidance-content  h1{
+    font-size: 2em;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8C50FF;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+#guidance-content  p{   
+    font-size: 14.6667px;
+    color: #939393;
+}
+@media(max-width: 785px){
+    #guidance-content{
+        padding: 20px;
+    }
+    #academic-section{
+        height: 30vh;
+    }
+    #guidance-content  h1{
+        margin-top: 10px;
+        font-size: 15px;
+        padding: 0 0;
+    }
+    #guidance-content  p{
+        font-size: 10px;
+    }
+}
+
+#diploma-section{
+    height: 50vh;
+    background-color: #e6daff;
+}
+#diploma-program{
+    align-self: center;    
+}
+#diploma-program h1{
+    font-size: 1.5em;
+    padding: 0 30px;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8C50FF;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+#diploma-program ul{
+    padding: 0 48px;
+}
+#diploma-program ul li a{
+    font-size: 14.6667px;
+}
+#diploma-image img{
+    margin-top: 35px;
+    margin-left: 70px;
+}
+@media (max-width: 785px){
+    #diploma-program h1{
+        font-size: 15px;
+    }
+    #diploma-program ul li a{
+        font-size: 14px;
+    }
+    #diploma-section{
+        height: auto;
+    }   
+    #diploma-image img{
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+}
+
+
+#release-section{
+    height: 50vh;
+    background-color: #fff;
+    margin-top: 50px;
+}
+#release-program{
+    align-self: center;    
+}
+#release-program h1{
+    font-size: 1.5em;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8C50FF;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+#release-program p{
+    font-size: 14.6667px;
+}
+#release-image img{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+@media (max-width: 785px){
+    #release-section{
+        height: auto;
+    }
+    #release-image img{
+        margin-left: 0;
+    }
+    #release-program h1{
+        font-size: 15px;
+    }
+    #release-program p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 785px){
+    #academic-section img{
+        margin-top: 85px;
+    }
+}
+#apply-section{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./about/about-images/sea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    height: 30vh;
+}
+#apply-content h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    margin-top: 65px;
+    padding-left: 100px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#apply-btn {
+    align-self: center;
+}
+#apply-btn button{
+    font-size: 15px;
+    margin-top: 50px;
+}
+@media(max-width: 785px){
+    #apply-content h1{
+        padding-left: 0;
+    }
+    #apply-btn button{
+        margin-top: 10px;
+    }
+}
+
+#placement-section{
+    background-color: #fff;
+}
+#placement-content{
+    padding: 0 30px;
+}
+#placement-content  h1{
+    font-size: 2em;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8C50FF;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+#placement-content  p{   
+    font-size: 14.6667px;
+}
+#placement-image{
+    align-self: center;
+}
+@media(max-width: 785px){
+    #placement-content  h1{
+        font-size: 15px;
+        padding: 0 0;
+    }
+    #placement-content  p{
+        font-size: 10px;
+    }
+}
+
+
+#reopening-section{
+    background-color: #e0d0ff;
+    height: 20vh;
+}
+#reopening-content h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    margin-top: 35px;
+    padding-left: 100px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#reopening-btn {
+    align-self: center;
+    align-items: center;
+}
+#reopening-btn button{
+    font-size: 20px;
+    margin-top: 10px;
+}
+@media(max-width: 785px){
+    #reopening-section{
+        height: auto;
+        margin-top: 10px;
+    }
+    #reopening-content h1{
+        padding-left: 0;
+        font-size: 15px;
+    }
+    #reopening-btn button{
+        margin-bottom: 20px;
+        font-size: 15px;
     }
 }
