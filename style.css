@@ -6,6 +6,11 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
 body{
     font-family: 'Poppins',sans-serif;
 }
@@ -539,6 +544,9 @@ body{
         margin-left: 0;
         margin-bottom: 50px;
     }
+    #reopening-section{
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -681,5 +689,469 @@ body{
     #reopening-btn button{
         margin-bottom: 20px;
         font-size: 15px;
+    }
+}
+
+
+
+
+/*------------- Blog ------------*/
+
+#blog-section{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./Blog/blog-images/blog.jpg);
+        background-repeat: no-repeat;
+        height: 60vh;
+        background-size: cover;
+        width: 100%;
+
+}
+#news-section{
+    margin-top: 50px;
+}
+#news-head{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: #340094;
+}
+#news-search p{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+#news-search input{
+    height: 35px;
+    outline: none;
+    border-radius: 2px;
+}
+#first-feed-content h1{
+    color: #340094;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+#first-feed-content p{
+    font-size: 12px;
+    color: #939393;
+}
+#second-feed{
+    margin-top: 100px;
+}
+#search-feed-section{
+    margin-top: 30px;
+}
+#search-feed-section h1{
+    font-size: 20px;
+    color: #340094;
+}
+#first-search-feed-content{
+    align-self: center;
+}
+#first-search-feed-content h1{
+    font-size: 18px;
+    color: #340094;
+}
+#second-search-feed{
+    margin-top: 20px;
+}
+@media(max-width: 785px){
+    #blog-empty{
+        height: 80px;
+    }
+    #news-head h1{
+        font-size: 25px;
+    }
+    #feeds-section h1{
+        font-size: 25px;    
+        margin-top: 20px;
+    }
+   #feeds-section{
+       margin-bottom: 20px;
+   }
+    #news-search{
+        display: none;
+    }
+    #news-search{
+        display: none;
+    }
+    #search-feed-section{
+        display: none;
+    }
+    #second-search-feed{
+        display: none;
+    }
+    #blog-section{
+        height: 20vh;
+    }
+}
+
+
+/*------------- Event ------------*/
+
+#event-section{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./events/event-images/event-img.jpg);
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-size: cover;
+    width: 100%;
+
+}
+#event-card-section{
+    margin-bottom: 20px;
+}
+#event-bar-section{
+    background-color: silver;
+}
+#event-head-section{
+    margin-top: 50px;
+}
+#event-head-section h1{
+    font-family: 'Nunito', sans-serif;
+}
+#event-head-section .event-head h1{
+    color: #340094;
+    margin-bottom: 50px;
+}
+#event-date-section h1{
+    font-size: 20px;
+    margin-top: 10px;
+}
+#event-date-section input{
+    margin-bottom: 10px;
+    border: 1px solid #919191;
+    padding: 8px 40px;
+}
+#event-search-section h1{
+    font-size: 20px;
+    margin-top: 10px;
+}
+#event-search-section input{
+    margin-bottom: 10px;
+    border: 1px solid #919191;
+    padding: 8px 40px;
+    outline: none;
+}
+#event-btn-section{
+    align-self: center;
+}
+#event-btn-section button{
+    padding: 8px 40px;
+}
+
+#event-second-section{
+    margin-top: 50px;
+}
+#event-second-head span{
+    color: #340094;
+    font-size: 2em;
+    background-color: #fff;
+    padding: 0 60px;
+}
+#event-second-head:after {
+    content: "";
+    border-bottom: 1px solid #c2c2c2;
+    height: 1px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -10;
+}
+
+#event-card-one{
+    margin-top: 50px;
+    background-color: #d4d4d4;
+}
+#event-card-head h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    color: #340094;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#event-card-head p{
+    font-size: 15px;
+}
+#event-card-head p:nth-child(3){
+    margin-bottom: 0;
+    font-style: italic;
+}
+#event-card-head p:nth-child(4){
+    margin-bottom: 0;
+    font-style: italic;
+}
+#event-card-img-section{
+    margin-bottom: 10px;
+}
+@media(max-width:785px){
+    #event-section{
+        height: 20vh;
+    }
+    #event-head-section .event-head h1{
+        font-size: 25px;
+    }
+    #event-btn-section button{
+        margin-bottom: 20px;
+    }
+    #event-card-one{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #event-second-head span{
+        font-size: 25px;
+        padding: 0 20px;
+    }
+    #event-card-head h1{
+        font-size: 25px;
+    }
+    #event-card-head p{
+        font-size: 12px;
+    }
+    #event-date-section input{
+        padding: 8px 2px;
+    }
+    #event-search-section input{
+        padding: 8px 2px;
+    }
+}
+
+/*------------- Contact ------------*/
+
+#extra-height{
+    width: 100%;
+    height: 85px;
+}
+#contact-section{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./contact/contact-images/Contact-img.jpg);
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-size: cover;
+    width: 100%;
+}
+#contact-head-section{
+    display: grid;
+    place-items: center;
+    height: 60vh;
+}
+#contact-head-section h1{
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+#contact-head-section h1 > p{
+    font-weight: 500;
+    font-size: 15px;
+}
+#contact-last-section{
+    margin-top: 50px;
+}
+#contact-last-section p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#contact-last-section input{
+    width: 100%;
+    background-color: #dfdfdf;
+    border: none;
+    margin-bottom: 20px;
+    outline-color: #8C50FF;
+    padding: 0 1px;
+    height: 30px;
+}
+#contact-last-section textarea{
+    width: 100%;
+    background-color: #dfdfdf;
+    outline-color: #8C50FF;
+    border: none;
+}
+#contact-address p{
+    font-weight: 500;
+}
+@media (max-width: 785px){
+    #contact-section{
+        height: 20vh;
+    }
+    #contact-head-section{
+        height: 20vh;
+    }
+    #contact-head-section h1{
+        font-size: 25px;
+    }
+    #contact-head-section h1 > p{
+        font-size: 12px;
+    }
+    #contact-last-section p{
+        font-size: 12px;
+    }
+    #contact-last-section h1{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    #contact-btn-section{
+        margin-bottom: 30px;
+    }
+    #contact-address{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+/*------------- Teacher ------------*/
+
+#extra-height{
+    width: 100%;
+    height: 85px;
+}
+#teacher-section{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./be-teacher/teacher-img/teacher.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+}
+#teacher-head-section{
+    margin-top: 50px;
+}
+#teacher-message-section{
+    padding: 10px 50px;
+    background-color: #8C50FF;
+    border-radius: 10px;
+}
+#teacher-card-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#teacher-card-section p{
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #fff;
+}
+#teacher-step-section p{    
+    color: #939393;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#teacher-step-section ul{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#teacher-step-section ul li{
+    color: #939393;
+}
+#teacher-card-section input{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    outline-color: #8C50FF;
+    padding: 0 1px;
+    height: 30px;
+}
+#teacher-card-section textarea{
+    width: 100%;
+    background-color: #fff;
+    outline-color: #8C50FF;
+    border: none;
+}
+#teacher-card-head h1{
+    margin-top: 10px;
+    color: #fff;
+}
+#teacher-btn-section button{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media (max-width: 785px){
+    #teacher-head-section h1{
+        font-size: 25px;
+    }
+    #teacher-head-section p{
+        font-size: 12px;
+        padding: 0 40px;
+    }
+    #teacher-card-section p{
+        font-size: 12px;
+    }
+    #teacher-card-head h1{
+        font-size: 25px;
+    }
+    #teacher-message-section{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #teacher-step-section{
+        margin-top: 20px;
+    }
+    #teacher-step-section h1{
+        font-size: 25px;
+    }
+    #teacher-step-section p{
+        font-size: 12px;
+    }
+    #teacher-step-section ul{
+        font-size: 12px;
+    }
+}
+
+
+#footer-map-section{
+    background-color: #130036;
+}
+#footer-contact h1{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: 'Nunito', sans-serif;
+}
+#footer-map{
+    margin-top: 30px;
+}
+#social-media {
+    margin-top: 50px;
+}
+#social-media i{
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#social-media i:nth-child(1){
+    color: #2e2bff;
+    padding: 10px 14px;
+    border-radius: 55px;
+}
+#social-media i:nth-child(2){
+    color: #50c8ff;
+}
+#social-media i:nth-child(3){
+    color: #ff0101;
+}
+#social-media i:nth-child(4){
+    color: #ee1c85;
+}
+#footer-address-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#footer-address-section p{
+    color: #fff;
+    margin-bottom: 0;
+}
+@media (max-width: 785px){
+    #footer-contact h1{
+        font-size: 25px;
+    }
+    #social-media{
+        margin-top: 20px;
+    }
+    #footer-address-section p{
+        font-size: 12px;
+    }
+    #footer-map iframe{
+        height: 200px;
     }
 }
