@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth; 
-}
+} 
 *{ 
     margin: 0;
     padding: 0;
@@ -32,7 +32,13 @@ body{
 }
 .nav-item a{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #8C50FF;
+}
+#activate a{
+    color: #8C50FF;
 }
 .nav-item{
     padding: 0 5px;
@@ -65,8 +71,9 @@ body{
     text-align: center;
 }
 .carousel-caption h5{
-    font-size: 4em;
+    font-size: 4.5em;
     text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
 }
 .carousel-indicators li {
     box-sizing: content-box;
@@ -177,8 +184,9 @@ body{
     margin: auto 0;
 }
 #online-twenty .online-content h1{
+    font-size: 3em;
     font-weight: 700;
-    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
 }
 #online-twenty .online-class-img img{
     border-radius: 10px;
@@ -255,7 +263,7 @@ body{
 }
 
 #staff-section{
-    background-color: #e2d3ff;
+    background-color: #e7ddff;
     height: 120vh;
 }
 #staff-ex{
@@ -266,8 +274,9 @@ body{
 }
 #staff-content h1{
     font-weight: bold;
-    text-transform: uppercase;
-    font-size: 3em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.5em;
+    letter-spacing: -2px;
 }
 .teacher-head{
     margin-top: 50px;
@@ -362,6 +371,10 @@ body{
     font-weight: 700;   
     padding: 0 50px;
     letter-spacing: 2px;
+}
+
+.shadow {
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 #about-section-content .about-scetion-mission p{
     padding: 0 50px;
@@ -505,7 +518,7 @@ body{
 
 #diploma-section{
     height: 50vh;
-    background-color: #e6daff;
+    background-color: #f8f5ff;
 }
 #diploma-program{
     align-self: center;    
@@ -569,6 +582,7 @@ body{
 }
 #release-program p{
     font-size: 14.6667px;
+    color: #939393;
 }
 #release-image img{
     margin-top: 10px;
@@ -658,13 +672,13 @@ body{
 
 
 #reopening-section{
-    background-color: #e0d0ff;
+    background-color: #f8f5ff;
     height: 20vh;
 }
 #reopening-content h1{
     font-family: 'Nunito', sans-serif;
     font-size: 1.2em;
-    margin-top: 35px;
+    margin-top: 45px;
     padding-left: 100px;
     letter-spacing: 3px;
     font-weight: bold;
@@ -675,7 +689,7 @@ body{
 }
 #reopening-btn button{
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 @media(max-width: 785px){
     #reopening-section{
@@ -703,7 +717,6 @@ body{
         height: 60vh;
         background-size: cover;
         width: 100%;
-
 }
 #news-section{
     margin-top: 50px;
@@ -717,11 +730,23 @@ body{
     margin-bottom: 0;
     font-weight: bold;
     font-size: 15px;
+    color: #340094;
 }
 #news-search input{
     height: 35px;
     outline: none;
-    border-radius: 2px;
+    border-radius: 5px;
+    border-color: #2e2bff;
+}
+#news-search button{
+    padding: 6px 8px;
+    border-radius: 5px;
+}
+#first-feed{
+    border-bottom: 1px solid silver;
+}
+#second-feed{
+    border-bottom: 1px solid silver;
 }
 #first-feed-content h1{
     color: #340094;
@@ -734,7 +759,7 @@ body{
     color: #939393;
 }
 #second-feed{
-    margin-top: 100px;
+    margin-top: 20px;
 }
 #search-feed-section{
     margin-top: 30px;
@@ -798,9 +823,6 @@ body{
 #event-card-section{
     margin-bottom: 20px;
 }
-#event-bar-section{
-    background-color: silver;
-}
 #event-head-section{
     margin-top: 50px;
 }
@@ -860,7 +882,7 @@ body{
 
 #event-card-one{
     margin-top: 50px;
-    background-color: #d4d4d4;
+    
 }
 #event-card-head h1{
     font-family: 'Nunito', sans-serif;
@@ -944,6 +966,11 @@ body{
 }
 #contact-last-section{
     margin-top: 50px;
+    margin-bottom: 50px;
+}
+#contact-last-section h1{
+    color: #340094;
+    font-family: 'Nunito', sans-serif;
 }
 #contact-last-section p{
     margin-bottom: 0;
@@ -951,7 +978,7 @@ body{
 }
 #contact-last-section input{
     width: 100%;
-    background-color: #dfdfdf;
+    background-color: #f1f1f1;
     border: none;
     margin-bottom: 20px;
     outline-color: #8C50FF;
@@ -960,9 +987,12 @@ body{
 }
 #contact-last-section textarea{
     width: 100%;
-    background-color: #dfdfdf;
+    background-color: #f1f1f1;
     outline-color: #8C50FF;
     border: none;
+}
+#contact-btn-section button{
+    font-weight: bold;
 }
 #contact-address p{
     font-weight: 500;
@@ -1012,10 +1042,17 @@ body{
 #teacher-head-section{
     margin-top: 50px;
 }
+#teacher-head-section h1{
+    color: #340094;
+    font-family: 'Nunito', sans-serif;
+}
 #teacher-message-section{
     padding: 10px 50px;
     background-color: #8C50FF;
     border-radius: 10px;
+}
+#teacher-message-section h1{
+    font-family: 'Nunito', sans-serif;
 }
 #teacher-card-section{
     margin-top: 50px;
@@ -1025,6 +1062,10 @@ body{
     margin-bottom: 0;
     font-weight: bold;
     color: #fff;
+}
+#teacher-step-section h1{
+    color: #340094;
+    font-family: 'Nunito', sans-serif;
 }
 #teacher-step-section p{    
     color: #939393;
@@ -1083,7 +1124,7 @@ body{
         margin-right: 10px;
     }
     #teacher-step-section{
-        margin-top: 20px;
+        margin-top: 0px;
     }
     #teacher-step-section h1{
         font-size: 25px;

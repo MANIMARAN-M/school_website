@@ -7,6 +7,9 @@
     <!--------------------------------------------- Icon ---------------------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--------------------------------------------- Animations ---------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--------------------------------------------- bootstrap ---------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -29,7 +32,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item" id="activate">
                         <a class="nav-link hvr-sweep-to-top" href="./index.html">Home <span
                                 class="sr-only">(current)</span></a>
                     </li>
@@ -79,14 +82,14 @@
                 <div class="carousel-item" data-interval="2000">
                     <img src="./images/Home-img-2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>World best education School</h5>
+                        <h5>World best education <br> School</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./images/Home-img-3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>World best education School</h5>
+                        <h5>World best education <br> School</h5>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                 </div>
@@ -115,8 +118,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card hvr-grow-shadow" data-aos="fade-up" data-aos-once="true" data-aos-offset="60"
-                    data-aos-duration="1200">
+                <div class="card" data-aos="fade-up" data-aos-once="true" data-aos-offset="60" data-aos-duration="1200">
                     <img class="card-img-top card-2 card-3 mt-3 mb-3" src="./images/Data_analysis_PNG.png"
                         alt="Card image cap">
                     <div class="card-body text-center">
@@ -126,8 +128,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card hvr-grow-shadow" data-aos="fade-up" data-aos-once="true" data-aos-offset="60"
-                    data-aos-duration="1200">
+                <div class="card" data-aos="fade-up" data-aos-once="true" data-aos-offset="60" data-aos-duration="1200">
                     <img class="card-img-top card-2 mt-3 mb-3" src="./images/music.png" alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title">Music Lessons
@@ -144,7 +145,8 @@
     <section class="container-fluid" id="online-twenty">
         <div class="container">
             <div class="row" id="online-class">
-                <div class="col-md-6 online-content">
+                <div class="col-md-6 online-content" data-aos="fade-right" data-aos-duration="1200"
+                    data-aos-once="true">
                     <h1>
                         Best Insutude of Online Coaching 2020
                     </h1>
@@ -159,7 +161,8 @@
                     </p>
                     <button class="btn btn-primary">learn more</button>
                 </div>
-                <div class="col-md-6 online-class-img">
+                <div class="col-md-6 online-class-img" data-aos="fade-down-left" data-aos-duration="1200"
+                    data-aos-once="true">
                     <img src="./images/Online_school_PNG.png" alt="" class="img-fluid mt-2 mb-2">
                 </div>
             </div>
@@ -196,7 +199,8 @@
                 </div>
                 <div class="col-md-12 teacher-head">
                     <div class="card-deck">
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-once="true" data-aos-offset="30"
+                            data-aos-duration="1200">
                             <img src="./images/teacher-1.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">ADEN HEZARD</h5>
@@ -205,7 +209,8 @@
                                 <span>aden.hezard@gmail.com</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-once="true" data-aos-offset="60"
+                            data-aos-duration="1200">
                             <img src="./images/teacher-2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">JOHN DEO</h5>
@@ -213,7 +218,8 @@
                                 <i class="fa fa-envelope" aria-hidden="true"></i><span>john.deo@gmail.com</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" data-aos="fade-up" data-aos-once="true" data-aos-offset="60"
+                            data-aos-duration="1200">
                             <img src="./images/teacher-3.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">KELY FROUZA</h5>
@@ -269,7 +275,10 @@
     </section>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

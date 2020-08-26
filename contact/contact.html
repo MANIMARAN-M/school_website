@@ -7,6 +7,9 @@
     <!--------------------------------------------- Icon ---------------------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--------------------------------------------- Animations ---------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--------------------------------------------- bootstrap ---------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -45,7 +48,7 @@
                     <li class="nav-item">
                         <a class="nav-link hvr-sweep-to-top" href="../Blog/blog.html">Blog</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item" id="activate">
                         <a class="nav-link hvr-sweep-to-top" href="../contact/contact.html">Contact us<span
                                 class="sr-only">(current)</span></a>
                     </li>
@@ -76,12 +79,13 @@
         </div>
     </section>
 
-    <section class="container" id="contact-last-section">
-        <div>
+    <section class="container shadow" id="contact-last-section" data-aos="fade-up" data-aos-once="true"
+        data-aos-offset="30" data-aos-duration="1200">
+        <div class="mt-5">
             <h1>Get in touch</h1>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row mt-3">
+            <div class="col-md-6 mb-4">
                 <div class="row">
                     <div class="col-sm-6" id="contact-first-name">
                         <p>First Name</p>
@@ -111,8 +115,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 text-center" id="contact-btn-section">
-                        <button class="btn btn-primary">Send message</button>
+                    <div class="col-sm-12 text-center mt-3 mb-1" id="contact-btn-section">
+                        <button type="submit" class="btn btn-primary">Send message <i class="fa fa-paper-plane"
+                                aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -169,7 +174,10 @@
         </div>
     </section>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

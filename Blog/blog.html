@@ -7,6 +7,9 @@
     <!--------------------------------------------- Icon ---------------------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--------------------------------------------- Animations ---------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--------------------------------------------- bootstrap ---------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -42,7 +45,7 @@
                     <li class="nav-item">
                         <a class="nav-link hvr-sweep-to-top" href="../events/event.html">Events</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item" id="activate">
                         <a class="nav-link hvr-sweep-to-top" href="../Blog/blog.html">Blog<span
                                 class="sr-only">(current)</span></a>
                     </li>
@@ -68,7 +71,7 @@
     </section>
 
     <section class="container" id="news-section">
-        <div class="row">
+        <div class="row" data-aos="fade-right" data-aos-once="true" data-aos-offset="30" data-aos-duration="1200">
             <div class="col-md-8" id="news-head">
                 <h1>
                     News
@@ -87,13 +90,13 @@
     </section>
 
     <section class="container" id="feeds-section">
-        <div class="row">
+        <div class="row" data-aos="fade-right" data-aos-once="true" data-aos-offset="30" data-aos-duration="1200">
             <div class="col-md-8" id="first-feed">
                 <div class="row">
                     <div class="col-sm-4" id="first-feed-img">
                         <img src="./blog-images/blog.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-8" id="first-feed-content">
+                    <div class="col-sm-8" id="first-feed-content">
                         <h1>
                             TS Marco Update
                         </h1>
@@ -102,7 +105,7 @@
                             afternoon and is now expected to impact our area by Monday afternoon as a Category 1
                             Hurricane. As suc…
                         </p>
-                        <button class="btn btn-primary">Read more</button>
+                        <button class="btn btn-primary mb-5">Read more</button>
                     </div>
                 </div>
             </div>
@@ -110,12 +113,14 @@
                 <h1>Latest Updates</h1>
                 <div class="row" id="first-search-feed">
                     <div class="col-sm-6" id="first-search-feed-img">
-                        <img src="./blog-images/blog.jpg" alt="" class="img-fluid">
+                        <img src="./blog-images/first-feed.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="col-sm-6" id="first-search-feed-content">
-                        <h1>
-                            TS Marco Update
-                        </h1>
+                        <a href="#">
+                            <h1>
+                                TS Marco Update
+                            </h1>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -127,7 +132,7 @@
                     <div class="col-sm-4" id="first-feed-img">
                         <img src="./blog-images/second-feed-img.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-8" id="first-feed-content">
+                    <div class="col-sm-8" id="first-feed-content">
                         <h1>
                             Dr. Cola's Chamber (8/21)
                         </h1>
@@ -141,14 +146,16 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="row" id="second-search-feed">
+                <div class="row shadow" id="second-search-feed">
                     <div class="col-sm-6" id="first-search-feed-img">
-                        <img src="./blog-images/second-feed-img.jpg" alt="" class="img-fluid">
+                        <img src="./blog-images/second-feed-img.jpg" alt="" class="mt-1 mb-1 img-fluid">
                     </div>
                     <div class="col-sm-6" id="first-search-feed-content">
-                        <h1>
-                            TS Marco Update
-                        </h1>
+                        <a href="#">
+                            <h1>
+                                Dr. Cola's Chamber (8/21)
+                            </h1>
+                        </a>
                     </div>
                 </div>
                 <div class="row" id="second-search-feed">
@@ -156,9 +163,11 @@
                         <img src="./blog-images/third-feed-img.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="col-sm-6" id="first-search-feed-content">
-                        <h1>
-                            TS Marco Update
-                        </h1>
+                        <a href="#">
+                            <h1>
+                                Device & Course Material
+                            </h1>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -170,7 +179,7 @@
                     <div class="col-sm-4" id="first-feed-img">
                         <img src="./blog-images/third-feed-img.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-8" id="first-feed-content">
+                    <div class="col-sm-8" id="first-feed-content">
                         <h1>
                             Device & Course Material
                         </h1>
@@ -184,14 +193,16 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="row" id="second-search-feed">
+                <div class="row shadow" id="second-search-feed">
                     <div class="col-sm-6" id="first-search-feed-img">
-                        <img src="./blog-images/forth-feed-img.jpg" alt="" class="img-fluid">
+                        <img src="./blog-images/forth-feed-img.jpg" alt="" class="mt-1 mb-1 img-fluid">
                     </div>
                     <div class="col-sm-6" id="first-search-feed-content">
-                        <h1>
-                            TS Marco Update
-                        </h1>
+                        <a href="#">
+                            <h1>
+                                Curbside Meal Pickup
+                            </h1>
+                        </a>
                     </div>
                 </div>
                 <div class="row" id="second-search-feed">
@@ -199,9 +210,11 @@
                         <img src="./blog-images/fifth-feed-img.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="col-sm-6" id="first-search-feed-content">
-                        <h1>
-                            TS Marco Update
-                        </h1>
+                        <a href="#">
+                            <h1>
+                                Friday Message - 8/14
+                            </h1>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -212,7 +225,7 @@
                     <div class="col-sm-4" id="first-feed-img">
                         <img src="./blog-images/forth-feed-img.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-8" id="first-feed-content">
+                    <div class="col-sm-8" id="first-feed-content">
                         <h1>
                             Curbside Meal Pickup
                         </h1>
@@ -221,19 +234,21 @@
                             temporary and Sci High will roll-out a free home delivery service in the next few weeks.
                             Familes are…
                         </p>
-                        <button class="btn btn-primary">Read more</button>
+                        <button class="btn btn-primary mb-5">Read more</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="row" id="second-search-feed">
+                <div class="row shadow" id="second-search-feed">
                     <div class="col-sm-6" id="first-search-feed-img">
-                        <img src="./blog-images/sixth-feed-img.png" alt="" class="img-fluid">
+                        <img src="./blog-images/sixth-feed-img.png" alt="" class="mt-1 mb-1 img-fluid">
                     </div>
                     <div class="col-sm-6" id="first-search-feed-content">
-                        <h1>
-                            TS Marco Update
-                        </h1>
+                        <a href="#">
+                            <h1>
+                                Sci High Summer Reading List
+                            </h1>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -245,7 +260,7 @@
                     <div class="col-sm-4" id="first-feed-img">
                         <img src="./blog-images/fifth-feed-img.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-8" id="first-feed-content">
+                    <div class="col-sm-8" id="first-feed-content">
                         <h1>
                             Friday Message - 8/14
                         </h1>
@@ -254,7 +269,7 @@
                             Day, and approach our first day of virtual-school on Monday, August 17th. So let's get
                             ready…
                         </p>
-                        <button class="btn btn-primary">Read more</button>
+                        <button class="btn btn-primary mb-5">Read more</button>
                     </div>
                 </div>
             </div>
@@ -264,19 +279,19 @@
         </div>
 
         <div class="row">
-            <div class="col-md-8" id="second-feed">
+            <div class="col-md-8 mb-5" id="second-feed" id="last-feed">
                 <div class="row">
                     <div class="col-sm-4" id="first-feed-img">
                         <img src="./blog-images/sixth-feed-img.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-8" id="first-feed-content" id="mobile-purpose-section">
+                    <div class="col-sm-8" id="first-feed-content" id="mobile-purpose-section">
                         <h1>
                             Sci High Summer Reading List
                         </h1>
                         <p>
                             2019 Summer Reading Assignments and Audiobooks 2019 Summer List.
                         </p>
-                        <button class="btn btn-primary">Read more</button>
+                        <button class="btn btn-primary mb-5">Read more</button>
                     </div>
                 </div>
             </div>
@@ -328,7 +343,10 @@
         </div>
     </section>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

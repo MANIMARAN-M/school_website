@@ -7,6 +7,9 @@
     <!--------------------------------------------- Icon ---------------------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--------------------------------------------- Animations ---------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--------------------------------------------- bootstrap ---------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -33,7 +36,7 @@
                     <li class="nav-item">
                         <a class="nav-link hvr-sweep-to-top" href="../index.html">Home</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item" id="activate">
                         <a class="nav-link hvr-sweep-to-top" href="../about/about.html">About us<span
                                 class="sr-only">(current)</span></a>
                     </li>
@@ -86,7 +89,8 @@
     <section class="container-fluid" id="history-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 mt-5 mb-5" id="history-content">
+                <div class="col-md-12 mt-5 mb-5" id="history-content" data-aos="fade-right" data-aos-once="true"
+                    data-aos-offset="30" data-aos-duration="1200">
                     <h1>History</h1>
                     <p>Offering specialized instruction in science, math, and technology, and providing an open door to
                         any
@@ -102,27 +106,34 @@
                         scholastic aptitudes can master science and mathematics concepts, given a culture of high
                         expectations and a respect for work and one another.
                     </p>
-                    <h1>
-                        After Hurricane Katrina
-                    </h1>
-                    <p>
-                        The post-Katrina public high school situation dictated a different model for SciHigh. There were
-                        only four public high schools open after the flood. Previously, there had been 22, all of which
-                        had
-                        served as feeder schools for Sci High. The demand for a half-day program had been destroyed.
-                        Therefore, in October, 2005, a mere 60 days after the collapse of the New Orleans levee system,
-                        The
-                        Advocates for Science & Mathematics Education, Inc. applied for and was granted a Type III
-                        charter
-                        by the Orleans Parish School Board. Now the founding Advocates had the full responsibility for
-                        finances and operations of their successful model.
-                    </p>
-                    <p>
-                        Responding to the new environment, the half-day program became a full-day program offering all
-                        subjects that are required for graduation. The high school moved from the Delgado campus to
-                        Allen
-                        School, a former elementary building, at the corner of Nashville and Loyola avenues.
-                    </p>
+                    <div data-aos="fade-left" data-aos-once="true" data-aos-offset="30" data-aos-duration="1200">
+                        <h1>
+                            After Hurricane Katrina
+                        </h1>
+                        <p>
+                            The post-Katrina public high school situation dictated a different model for SciHigh. There
+                            were
+                            only four public high schools open after the flood. Previously, there had been 22, all of
+                            which
+                            had
+                            served as feeder schools for Sci High. The demand for a half-day program had been destroyed.
+                            Therefore, in October, 2005, a mere 60 days after the collapse of the New Orleans levee
+                            system,
+                            The
+                            Advocates for Science & Mathematics Education, Inc. applied for and was granted a Type III
+                            charter
+                            by the Orleans Parish School Board. Now the founding Advocates had the full responsibility
+                            for
+                            finances and operations of their successful model.
+                        </p>
+                        <p>
+                            Responding to the new environment, the half-day program became a full-day program offering
+                            all
+                            subjects that are required for graduation. The high school moved from the Delgado campus to
+                            Allen
+                            School, a former elementary building, at the corner of Nashville and Loyola avenues.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,21 +149,24 @@
                 </div>
                 <div class="col-md-12 explore-card" id="explore-card-section">
                     <div class="card-deck">
-                        <div class="card">
+                        <div class="card shadow" data-aos="fade-up" data-aos-once="true" data-aos-offset="30"
+                            data-aos-duration="1200">
                             <img src="./about-images/techinical.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Career Technical <br> Education</h5>
                                 <button class="btn btn-primary">Learn More</button>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card shadow" data-aos="fade-up" data-aos-once="true" data-aos-offset="30"
+                            data-aos-duration="1200">
                             <img src="./about-images/intern.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Internships</h5>
                                 <button class="btn btn-primary">Learn More</button>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card shadow" data-aos="fade-up" data-aos-once="true" data-aos-offset="30"
+                            data-aos-duration="1200">
                             <img src="./about-images/Club.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Clubs</h5>
@@ -163,21 +177,24 @@
                 </div>
                 <div class="col-md-12 explore-card mt-5 mb-5" id="explore-card-section">
                     <div class="card-deck">
-                        <div class="card" id="about-card">
+                        <div class="card shadow" id="about-card" data-aos="fade-up" data-aos-once="true"
+                            data-aos-offset="30" data-aos-duration="1200">
                             <img src="./about-images/Placement.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Advanced Placement</h5>
                                 <button class="btn btn-primary">Learn More</button>
                             </div>
                         </div>
-                        <div class="card" id="about-card">
+                        <div class="card shadow" id="about-card" data-aos="fade-up" data-aos-once="true"
+                            data-aos-offset="30" data-aos-duration="1200">
                             <img src="./about-images/Mascot.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Our Mascot</h5>
                                 <button class="btn btn-primary">Learn More</button>
                             </div>
                         </div>
-                        <div class="card" id="about-card">
+                        <div class="card shadow" id="about-card" data-aos="fade-up" data-aos-once="true"
+                            data-aos-offset="30" data-aos-duration="1200">
                             <img src="./about-images/S.T.E.M.jpg" class="card-img-top" alt="...">
                             <div class="card-body text-center">
                                 <h5 class="card-title">S.T.E.M</h5>
@@ -232,7 +249,10 @@
         </div>
     </section>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

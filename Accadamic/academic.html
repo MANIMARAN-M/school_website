@@ -7,6 +7,9 @@
     <!--------------------------------------------- Icon ---------------------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--------------------------------------------- Animations ---------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--------------------------------------------- bootstrap ---------------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -36,7 +39,7 @@
                     <li class="nav-item">
                         <a class="nav-link hvr-sweep-to-top" href="../about/about.html">About us</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item" id="activate">
                         <a class="nav-link hvr-sweep-to-top" href="./academic.html">Academic<span
                                 class="sr-only">(current)</span></a>
                     </li>
@@ -57,18 +60,19 @@
             </div>
         </nav>
     </section>
-    <section id="empty">
+    <!-- <section id="empty">
         <div>
 
         </div>
-    </section>
+    </section> -->
     <section class="container-fluid" id="academic-section">
     </section>
 
     <section class="container-fluid" id="guidance-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 mt-5 mb-5" id="guidance-content">
+                <div class="col-md-12 mt-5 mb-5" id="guidance-content" data-aos="fade-right" data-aos-once="true"
+                    data-aos-offset="30" data-aos-duration="1200">
                     <h1>Academic Guidance</h1>
                     <p>Sci High provides a wide array of academic supports, including extra reading and math classes,
                         test prep classes, extended academic days for teacher-led data-driven tutoring and in-school
@@ -91,7 +95,8 @@
     <section class="container-fluid" id="diploma-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" id="diploma-program">
+                <div class="col-md-6" id="diploma-program" data-aos="fade-down-right" data-aos-once="true"
+                    data-aos-offset="30" data-aos-duration="1200">
                     <h1>
                         Learn more about Louisiana's diploma programs
                     </h1>
@@ -107,21 +112,24 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6" id="diploma-image">
+                <div class="col-md-6" id="diploma-image" data-aos="fade-down-left" data-aos-once="true"
+                    data-aos-offset="30" data-aos-duration="1200">
                     <img src="./Academic-images/diploma-1.jpg" alt="" class="img-fluid" width="400px">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container-fluid" id="release-section">
+    <section class="container-fluid mb-4" id="release-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" id="release-image">
+                <div class="col-md-6" id="release-image" data-aos="fade-up-right" data-aos-once="true"
+                    data-aos-offset="30" data-aos-duration="1200">
                     <img src="./Academic-images/children-running-through-school.jpg" alt="" class="img-fluid"
                         width="450px">
                 </div>
-                <div class="col-md-6" id="release-program">
+                <div class="col-md-6" id="release-program" data-aos="fade-up-left" data-aos-once="true"
+                    data-aos-offset="30" data-aos-duration="1200">
                     <h1>
                         Early Release
                     </h1>
@@ -159,7 +167,8 @@
     <section class="container-fluid" id="placement-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mt-5 mb-5" id="placement-content">
+                <div class="col-md-6 mt-5 mb-5" id="placement-content" data-aos="fade-right" data-aos-once="true"
+                    data-aos-offset="30" data-aos-duration="1200">
                     <h1>Academic Guidance</h1>
                     <p>Sci High provides a wide array of academic supports, including extra reading and math classes,
                         test prep classes, extended academic days for teacher-led data-driven tutoring and in-school
@@ -175,14 +184,15 @@
                     </p>
                     <button class="btn btn-primary">Learn More</button>
                 </div>
-                <div class="col-md-6" id="placement-image">
+                <div class="col-md-6" id="placement-image" data-aos="fade-right" data-aos-once="true"
+                    data-aos-offset="30" data-aos-duration="1200">
                     <img src="./Academic-images/Placement-academuc.jpg" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container-fluid" id="reopening-section">
+    <section class="container-fluid mb-4" id="reopening-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-8" id="reopening-content">
@@ -238,7 +248,10 @@
         </div>
     </section>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
