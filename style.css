@@ -252,7 +252,7 @@ body{
         font-size: 3em;
     }
     #online-two-class .online-two-content h2:after{
-        top: 42%;
+        top: 37%;
         left: 15%;
         width: 230px;
     }
@@ -352,34 +352,59 @@ body{
 
 /*----------- About ----------------*/
 
+
+#about-section{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(./about/about-images/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
 @media (max-width: 785px){
-    #about-section img{
-        margin-top: 85px;
+    #about-empty{
+        height: 82px;
+    }
+    #about-section{
+        height: 20vh;
+        width: 100%;
     }
 }
-#about-section-content{
+/* #about-section-content{
     background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(./about/about-images/sea.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #FFF;
+    color: #FFF; */ 
+#about-section-mobile{
+    align-self: center;
 }
-#about-section-content .about-scetion-mission{
-    padding: 0 50px;
+#vision-img-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-#about-section-content .about-scetion-mission h1{
+#about-section-mobile span{
     font-family: 'Nunito', sans-serif;
     font-weight: 700;   
-    padding: 0 50px;
     letter-spacing: 2px;
+    color: #340094;
+    font-size: 2.5em;
 }
-
 .shadow {
     box-shadow: 3px 3px 5px 6px #ccc;
 }
 #about-section-content .about-scetion-mission p{
-    padding: 0 50px;
+    color: #939393;
 }
 @media(max-width: 785px){
+    #about-section-mobile{
+        margin-top: 50px;
+    }
+    #vision-img-section{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #about-section-mobile span{
+        font-size: 25px;
+    }
     #about-section-content .about-scetion-mission{
         padding: 0 0;
     }
@@ -400,7 +425,7 @@ body{
     font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
-    color: #8C50FF;
+    color: #340094;
     margin-top: 30px;
     letter-spacing: 2px;
 }
@@ -806,6 +831,9 @@ body{
     }
     #blog-section{
         height: 20vh;
+    }
+    #mobile-btn-extra{
+        margin-bottom: 40px;
     }
 }
 
