@@ -51,15 +51,17 @@ body{
     background-color: #8C50FF;
     border-color: #8C50FF;
 }
-#empty{
-    width: 100%;
-    height: 50px;
-}
 .d-none {
     display: block!important;
 }
+#About{
+    /* margin-top: -50px; */
+}
+.carousel-item img{
+    margin-top: -80px;
+}
 .carousel-caption {
-    width: 100%;
+    width: 80%;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -98,6 +100,9 @@ body{
     #empty{
         height: 75px;
     }
+    .carousel-item img{
+        margin-top: 0px;
+    }
     .carousel-caption {
         top: 50%;
         left: 50%;
@@ -108,12 +113,12 @@ body{
         text-align: center;
     }
     .carousel-caption h5{
-        font-size: 20px;
+        font-size: 15px;
         padding: 0 50px;
         text-transform: uppercase;
     }
     .carousel-caption p{
-        font-size: 10px;
+        font-size: 8px;
         padding: 0 80px;
     } 
 } 
@@ -229,8 +234,9 @@ body{
 #online-two-class .online-two-content h2:after{
     content: '';
     position: absolute;
-    top: 51%;
-    left: 33%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 380px;
     height: 3px;
     background-color: #8C50FF;
@@ -252,8 +258,9 @@ body{
         font-size: 3em;
     }
     #online-two-class .online-two-content h2:after{
-        top: 37%;
-        left: 15%;
+        top: 38%;
+        left: 43%;
+        transform: translate(-38%, -43%);
         width: 230px;
     }
     #online-two-class .online-two-content button{
@@ -369,17 +376,19 @@ body{
         width: 100%;
     }
 }
-/* #about-section-content{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(./about/about-images/sea.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #FFF; */ 
 #about-section-mobile{
     align-self: center;
 }
 #vision-img-section{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+#history-img{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    opacity: 0.3;
 }
 #about-section-mobile span{
     font-family: 'Nunito', sans-serif;
@@ -413,6 +422,9 @@ body{
     }
     #about-section-content .about-scetion-mission p{
         font-size: 10px;
+    }
+    #history-img{
+        width: 100px;
     }
 }
 
@@ -542,7 +554,6 @@ body{
 }
 
 #diploma-section{
-    height: 50vh;
     background-color: #f8f5ff;
 }
 #diploma-program{
@@ -567,6 +578,7 @@ body{
 #diploma-image img{
     margin-top: 35px;
     margin-left: 70px;
+    margin-bottom: 30px;
 }
 @media (max-width: 785px){
     #diploma-program h1{
@@ -589,7 +601,6 @@ body{
 
 
 #release-section{
-    height: 50vh;
     background-color: #fff;
     margin-top: 50px;
 }
@@ -612,6 +623,7 @@ body{
 #release-image img{
     margin-top: 10px;
     margin-left: 20px;
+    margin-bottom: 30px;
 }
 @media (max-width: 785px){
     #release-section{
@@ -638,12 +650,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFF;
-    height: 30vh;
 }
 #apply-content h1{
     font-family: 'Nunito', sans-serif;
     font-size: 1.2em;
-    margin-top: 65px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding-left: 100px;
     letter-spacing: 3px;
     font-weight: bold;
@@ -653,14 +665,16 @@ body{
 }
 #apply-btn button{
     font-size: 15px;
-    margin-top: 50px;
+    font-weight: bold;
 }
 @media(max-width: 785px){
     #apply-content h1{
         padding-left: 0;
+        font-size: 15px;
     }
     #apply-btn button{
-        margin-top: 10px;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 }
 
@@ -697,13 +711,13 @@ body{
 
 
 #reopening-section{
-    background-color: #f8f5ff;
-    height: 20vh;
+    background-color: #f4efff;
 }
 #reopening-content h1{
     font-family: 'Nunito', sans-serif;
     font-size: 1.2em;
-    margin-top: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding-left: 100px;
     letter-spacing: 3px;
     font-weight: bold;
@@ -713,8 +727,7 @@ body{
     align-items: center;
 }
 #reopening-btn button{
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 15px;
 }
 @media(max-width: 785px){
     #reopening-section{
@@ -807,6 +820,10 @@ body{
     #blog-empty{
         height: 80px;
     }
+    #blog-section{
+        height: 16vh;
+        width: 100%;
+    }
     #news-head h1{
         font-size: 25px;
     }
@@ -828,9 +845,6 @@ body{
     }
     #second-search-feed{
         display: none;
-    }
-    #blog-section{
-        height: 20vh;
     }
     #mobile-btn-extra{
         margin-bottom: 40px;
@@ -868,7 +882,9 @@ body{
 #event-date-section input{
     margin-bottom: 10px;
     border: 1px solid #919191;
-    padding: 8px 40px;
+    width: 100%;
+    padding: 8px 5px;
+    outline-color: #8C50FF;
 }
 #event-search-section h1{
     font-size: 20px;
@@ -877,7 +893,8 @@ body{
 #event-search-section input{
     margin-bottom: 10px;
     border: 1px solid #919191;
-    padding: 8px 40px;
+    width: 100%;
+    padding: 8px 5px;
     outline: none;
 }
 #event-btn-section{
@@ -937,6 +954,10 @@ body{
 @media(max-width:785px){
     #event-section{
         height: 20vh;
+    }
+    #event-bar-section{
+        margin-left: 10px;
+        margin-right: 10px;
     }
     #event-head-section .event-head h1{
         font-size: 25px;
@@ -1003,6 +1024,7 @@ body{
 #contact-last-section p{
     margin-bottom: 0;
     font-weight: bold;
+    color: #8C50FF;
 }
 #contact-last-section input{
     width: 100%;
@@ -1037,6 +1059,9 @@ body{
     }
     #contact-head-section h1 > p{
         font-size: 12px;
+    }
+    #mobile-purpose-correction{
+        margin-left: 50px;
     }
     #contact-last-section p{
         font-size: 12px;
@@ -1223,4 +1248,112 @@ body{
     #footer-map iframe{
         height: 200px;
     }
+}
+
+
+/*---------- Admission ----------------*/
+
+#admision-empty{
+    height: 80px;
+}
+#admission-head .design-one-img{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 500px;
+    z-index: -10;
+}
+#admission-head .design-two-img{
+    position: absolute;
+    top: -100%;
+    right: 0;
+    width: 500px;
+    z-index: -10;
+}
+#admission-head .design-three-img{
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    z-index: -10;
+}
+#admission-head .design-four-img{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    z-index: -1000;
+}
+#admission-head h1{
+    font-family: Calibri; 
+    font-size: 30px;         
+    font-style: normal; 
+    font-weight: bold; 
+    color:#8C50FF;
+    text-align: center; 
+    text-decoration: underline;
+}
+#admission-head h1:first-child{
+    font-size: 3em;
+    text-decoration: none;
+    color:SlateBlue;
+}
+#admission-form-section p{
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #8C50FF;
+    font-weight: bold;
+}
+#admission-form-section textarea{
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    outline-color: slateblue;
+    color: #000;
+    font-weight: bold;
+}
+#admission-form-section input{
+    margin-bottom: 10px;
+    width: 100%;
+    outline-color: slateblue;
+    border: 1px solid #c0c0c0;
+    font-weight: bold;
+    color: #838383;
+}
+#admission-form-section button{
+    padding: 8px 40px;
+}
+#admission-form-section button:last-child{
+    padding: 8px 50px;
+}
+#admission-right-img{
+    align-self: center;
+}
+#admission-right-img img{
+    animation: card-img 1s ease-in-out infinite alternate;
+    animation-delay: .5s;
+}
+#admission-left-img img{
+    animation: card-img 1s ease-in-out infinite alternate;
+}
+#gender-section input{
+    width: 40px;
+}
+@media(max-width: 785px){
+    #admission-head h1{
+        font-size: 15px;
+    }
+    #admission-head h1:first-child{
+        font-size: 25px;
+    }
+    #admission-right-img, #admission-left-img{
+        display: none;
+    }
+    #admission-form-section{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
 }
